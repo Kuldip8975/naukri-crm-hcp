@@ -1,0 +1,233 @@
+.settingsPage {
+  padding: 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0.25rem 0 0 0;
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.settingsList {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.settingsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-family: inherit;
+}
+
+.settingsItem:last-child {
+  border-bottom: none;
+}
+
+.settingsItem:hover {
+  background: #f8fafc;
+}
+
+.settingsItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settingsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.settingsItemInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.settingsItemTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.settingsItemDescription {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+}
+
+.settingsItemArrow {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.quickSettings {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.quickSettingsTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 1.25rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quickSettingItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.quickSettingItem:last-child {
+  border-bottom: none;
+}
+
+.quickSettingInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickSettingLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.quickSettingDescription {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.toggleButton {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  background: #cbd5e1;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.toggleButton.active {
+  background: #2563eb;
+}
+
+.toggleThumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #64748b;
+}
+
+.toggleButton.active .toggleThumb {
+  transform: translateX(20px);
+  color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .settingsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .settingsItem {
+    padding: 1rem 1.25rem;
+  }
+
+  .settingsIcon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .settingsItemTitle {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .settingsItem {
+    padding: 0.75rem 1rem;
+  }
+
+  .settingsItemLeft {
+    gap: 0.75rem;
+  }
+
+  .settingsIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .settingsIcon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .settingsItemDescription {
+    display: none;
+  }
+}

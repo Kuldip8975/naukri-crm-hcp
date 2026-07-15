@@ -1,0 +1,185 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 1.5rem;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 420px;
+}
+
+.loginCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.logoSubtitle {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: -2px;
+}
+
+.welcomeTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem 0;
+  text-align: center;
+}
+
+.welcomeSubtitle {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.625rem;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.passwordToggle:hover {
+  color: #475569;
+}
+
+.formOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -0.5rem;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #475569;
+  cursor: pointer;
+}
+
+.rememberMe input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.forgotPassword {
+  font-size: 0.875rem;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgotPassword:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.submitError {
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.registerLink {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 1.5rem 0 0 0;
+}
+
+.registerLink a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+.demoCredentials {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0.75rem 0 0 0;
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .loginCard {
+    padding: 1.5rem;
+  }
+
+  .welcomeTitle {
+    font-size: 1.25rem;
+  }
+}
